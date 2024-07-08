@@ -14,7 +14,7 @@ function Login() {
     const user = users.find(user => user.email === email && user.password === password);
 
     if (user) {
-      navigate('/home'); // Change to your home page route
+      navigate('/home');
     } else {
       setError('Invalid email or password');
     }
